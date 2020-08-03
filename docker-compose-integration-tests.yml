@@ -8,7 +8,7 @@ services:
     image: $LOCAL_IMAGE_ID
     tty: true
     command: >
-      sh -c "apk add openssl &&
+      sh -c "apk add openssl python &&
              npm ci &&
              npm run test:integration"
     environment:
